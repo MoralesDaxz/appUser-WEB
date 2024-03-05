@@ -1,5 +1,5 @@
 import axios from "axios";
-import { User, UsersProps } from "../types/type";
+import { User, Users } from "../types/type";
 
 const url = "http://localhost:8081/api/user/";
 
@@ -15,7 +15,7 @@ const getUsers = async () => {
 
 
 //Obtener User por ID
-const getUserById = async (userId: UsersProps) => {
+const getUserById = async (userId: Users) => {
   try {
     const response = await fetch('http://localhost:8080/api/user/' + userId);
     const data = await response.json();

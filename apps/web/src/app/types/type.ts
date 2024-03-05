@@ -1,4 +1,4 @@
-type UsersProps = {
+type Users = {
   id: string,
   nombre?: string,
   apellido?: string,
@@ -17,4 +17,4 @@ type User = {
   nie: string,
 }
 
-export type { UsersProps,User }
+export type { Users,User }

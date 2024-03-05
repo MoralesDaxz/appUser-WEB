@@ -2,14 +2,14 @@
 
 
 import React, { useState } from 'react'
-import { UsersProps } from '../types/type'
+import { Users } from '../types/type'
 import Image from 'next/image'
 import deleteIcon from '../assets/bin.svg'
 import configIcon from '../assets/config.svg'
 import { Modal } from './Modal'
 
 type user = {
-  users: UsersProps,
+  users: Users,
   numUser: number
 
 }

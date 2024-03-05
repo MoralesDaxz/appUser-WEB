@@ -3,11 +3,11 @@ import Link from "next/link";
 import Button from "./components/Button";
 import CardUser from "./components/CardUser";
 import { getUsers } from "./services/axios";
-import { UsersProps } from "./types/type";
+import { Users } from "./types/type";
 
 
 export default async function Page() {
-  const datos: UsersProps[] = await getUsers()
+  const datos: Users[] = await getUsers()
   const navOptions = [
     { title: 'Crear', route: '/new' },
     { title: 'Actualizar', route: '/change' },
